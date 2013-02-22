@@ -9,5 +9,8 @@
                #:cl-glut
                #:cl-glu)
   :components ((:file "package")
-               (:file "flow-gl")))
+               (:file "flow-gl")
+	       (:file "shader")
+	       (:file "window")))
 
+; (asdf:load-system :flow-gl)
