@@ -7,10 +7,14 @@
   :license "Specify license here"
   :depends-on (#:cl-opengl
                #:cl-glut
-               #:cl-glu)
+               #:cl-glu
+	       #:fset)
   :components ((:file "package")
+	       (:file "util")
                (:file "flow-gl")
 	       (:file "shader")
+	       (:file "buffer")
+	       (:file "triangle-list")
 	       (:file "window")))
 
 ; (asdf:load-system :flow-gl)
